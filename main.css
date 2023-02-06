@@ -1,0 +1,14 @@
+.section__subtitle {
+  font-family: "Basis Grotesque Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 111%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.item__title {
+  text-transform: uppercase;
+}/*# sourceMappingURL=main.css.map */
