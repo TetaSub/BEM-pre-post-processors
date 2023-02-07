@@ -1,6 +1,26 @@
-@include 
-    font-face('Basis Grotesque Pro', './fonts/basis/BasisGrotesquePro', 400, normal, woff2 woff ttf);
+@font-face
+    font-family: "Basis Grotesque Pro"
+    src: url("/fonts/basis/BasisGrotesquePro-Regular.woff2") format("woff2"), url("/fonts/basis/BasisGrotesquePro-Regular.woff") format("woff"), url("/fonts/basis/BasisGrotesquePro-Regular.ttf") format("truetype"), url("/fonts/__MACOSX/basis/._BasisGrotesquePro-Regular.woff2") format("woff2"), url("/fonts/__MACOSX/basis/._BasisGrotesquePro-Regular.woff2") format("woff"), url("/fonts/__MACOSX/basis/._BasisGrotesquePro-Regular.ttf") format("truetype")
+    font-weight: 400
+    font-display: swap
 
+@font-face
+    font-family: "Basis Grotesque Pro Bold"
+    src: url("./fonts/basis/BasisGrotesquePro-Bold.woff2") format("woff2"), url("./fonts/basis/BasisGrotesquePro-Bold.woff") format("woff"), url("./fonts/basis/BasisGrotesquePro-Bold.ttf") format("truetype"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Bold.woff2") format("woff2"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Bold.woff2") format("woff"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Bold.ttf") format("truetype")
+    font-weight: 700
+    font-display: swap
+
+@font-face
+    font-family: "Basis Grotesque Pro Medium"
+    src: url("./fonts/basis/BasisGrotesquePro-Medium.woff2") format("woff2"), url("./fonts/basis/BasisGrotesquePro-Medium.woff") format("woff"), url("./fonts/basis/BasisGrotesquePro-Medium.ttf") format("truetype"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Medium.woff2") format("woff2"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Medium.woff2") format("woff"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Medium.ttf") format("truetype")
+    font-weight: 500
+    font-display: swap
+
+@font-face
+    font-family: "Basis Grotesque Pro Light"
+    src: url("./fonts/basis/BasisGrotesquePro-Light.woff2") format("woff2"), url("./fonts/basis/BasisGrotesquePro-Light.woff") format("woff"), url("./fonts/basis/BasisGrotesquePro-Light.ttf") format("truetype"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Light.woff2") format("woff2"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Light.woff2") format("woff"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Light.ttf") format("truetype")
+    font-weight: 300
+    font-display: swap
 
 body
     margin: 0
@@ -11,11 +31,10 @@ body
     vertical-align: baseline
     width: auto
 
-.*
+*
     box-sizing: border-box
 
-
-.section__subtitle 
+.section__subtitle
     font-family: 'Basis Grotesque Pro'
     font-style: normal
     font-weight: 700
@@ -24,7 +43,6 @@ body
     letter-spacing: -0.03em
     text-transform: uppercase
     color: #000000
-
 
 .item__title
     font-family: 'Basis Grotesque Pro'
@@ -36,7 +54,6 @@ body
     text-transform: uppercase
     opacity: 0.9
     margin-top: 0
-
 
 .item__title_blue
     color: #0536FC
@@ -51,7 +68,6 @@ body
     color: #000000
     opacity: 0.6
 
-
 .small__note
     font-family: 'Basis Grotesque Pro'
     font-style: normal
@@ -62,7 +78,6 @@ body
     color: #000000
     opacity: 0.35
 
-/*
 .blue__button
     padding: 15px 50px
     background-color: #0536FC
@@ -76,26 +91,23 @@ body
     color: #fff
     border: none
 
-.item_hover:hover 
-    background-color: #0536FC 
+.item_hover:hover
+    background-color: #0536FC
 
-.item_hover:hover .item__title_hover 
-    color: #fff 
-
-.item_hover:hover .main__text_hover 
+.item_hover:hover .item__title_hover
     color: #fff
-*/
+
+.item_hover:hover .main__text_hover
+    color: #fff
 
 .support
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(360px, 4fr))
     justify-content: space-evenly
 
-
 .support-intro
-    grid-column: span 1
+    grid-column: span 2
     padding: 150px 0 6px 15%
-
 
 .support-intro__title
     margin-bottom: 30px
@@ -103,19 +115,16 @@ body
 .support-intro__subtitle
     margin-bottom: 70px
 
-
 .support-main
-    grid-column: span 1
     grid-column-start: 2
     grid-row-start: 2
     padding-right: 15%
     padding-left: 6%
-    
 
 .support-item
     border-top: 1px solid rgba(0, 0, 0, .15)
     -webkit-background-clip: padding-box
-    background-clip: padding-box 
+    background-clip: padding-box
 
 .support-item__header
     display: flex
@@ -125,26 +134,27 @@ body
     flex: 1
     margin-right: 20px
 
-.dash_active 
-    vertical-align: middle
-
-.dash_inactive 
-    vertical-align: middle
-
-.support-item__text 
+.support-item__text
     margin-right: 35%
     margin-bottom: 70px
 
+@media (max-width: 708px)
+    .support
+        display: grid
+        grid-template-columns: repeat(auto-fit, 100%)
+        justify-content: space-evenly
+    .support-intro
+        padding: 50px
+    .support-main
+        grid-column-start: 1
+        padding-left: 50px
 
 .partners
     display: none
 
-
-.contact 
+.contact
     display: none
 
-
-/*
 .partners
 
 .partners-intro
@@ -167,8 +177,6 @@ body
 
 .partners__button
 
-
-
 .contact
 
 .contact-intro
@@ -190,5 +198,3 @@ body
 .contact-item__message
 
 .contact__button
-
-*/

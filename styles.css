@@ -1,7 +1,27 @@
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: "Basis Grotesque Pro";
+  src: url("/fonts/basis/BasisGrotesquePro-Regular.woff2") format("woff2"), url("/fonts/basis/BasisGrotesquePro-Regular.woff") format("woff"), url("/fonts/basis/BasisGrotesquePro-Regular.ttf") format("truetype"), url("/fonts/__MACOSX/basis/._BasisGrotesquePro-Regular.woff2") format("woff2"), url("/fonts/__MACOSX/basis/._BasisGrotesquePro-Regular.woff2") format("woff"), url("/fonts/__MACOSX/basis/._BasisGrotesquePro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
 }
-
+@font-face {
+  font-family: "Basis Grotesque Pro Bold";
+  src: url("./fonts/basis/BasisGrotesquePro-Bold.woff2") format("woff2"), url("./fonts/basis/BasisGrotesquePro-Bold.woff") format("woff"), url("./fonts/basis/BasisGrotesquePro-Bold.ttf") format("truetype"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Bold.woff2") format("woff2"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Bold.woff2") format("woff"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Basis Grotesque Pro Medium";
+  src: url("./fonts/basis/BasisGrotesquePro-Medium.woff2") format("woff2"), url("./fonts/basis/BasisGrotesquePro-Medium.woff") format("woff"), url("./fonts/basis/BasisGrotesquePro-Medium.ttf") format("truetype"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Medium.woff2") format("woff2"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Medium.woff2") format("woff"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Basis Grotesque Pro Light";
+  src: url("./fonts/basis/BasisGrotesquePro-Light.woff2") format("woff2"), url("./fonts/basis/BasisGrotesquePro-Light.woff") format("woff"), url("./fonts/basis/BasisGrotesquePro-Light.ttf") format("truetype"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Light.woff2") format("woff2"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Light.woff2") format("woff"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+}
 body {
   margin: 0;
   padding: 0;
@@ -10,6 +30,10 @@ body {
   font-family: "Basis Grotesque Pro", "Basis Grotesque Pro Bold", "Basis Grotesque Pro Medium", "Basis Grotesque Pro Light";
   vertical-align: baseline;
   width: auto;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .section__subtitle {
@@ -94,7 +118,7 @@ body {
 }
 
 .support-intro {
-  grid-column: span 1;
+  grid-column: span 2;
   padding: 150px 0 6px 15%;
 }
 
@@ -107,7 +131,6 @@ body {
 }
 
 .support-main {
-  grid-column: span 1;
   grid-column-start: 2;
   grid-row-start: 2;
   padding-right: 15%;
@@ -130,19 +153,25 @@ body {
   margin-right: 20px;
 }
 
-.dash_active {
-  vertical-align: middle;
-}
-
-.dash_inactive {
-  vertical-align: middle;
-}
-
 .support-item__text {
   margin-right: 35%;
   margin-bottom: 70px;
 }
 
+@media (max-width: 708px) {
+  .support {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100%);
+    justify-content: space-evenly;
+  }
+  .support-intro {
+    padding: 50px;
+  }
+  .support-main {
+    grid-column-start: 1;
+    padding-left: 50px;
+  }
+}
 .partners {
   display: none;
 }
