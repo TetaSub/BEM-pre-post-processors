@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Basis Grotesque Pro";
-  src: url("./fonts/basis/BasisGrotesquePro-Regular.woff2") format("woff2"), url("/fonts/basis/BasisGrotesquePro-Regular.woff") format("woff"), url("/fonts/basis/BasisGrotesquePro-Regular.ttf") format("truetype"), url("/fonts/__MACOSX/basis/._BasisGrotesquePro-Regular.woff2") format("woff2"), url("/fonts/__MACOSX/basis/._BasisGrotesquePro-Regular.woff") format("woff"), url("/fonts/__MACOSX/basis/._BasisGrotesquePro-Regular.ttf") format("truetype");
+  src: url("./fonts/basis/BasisGrotesquePro-Regular.woff2") format("woff2"), url("./fonts/basis/BasisGrotesquePro-Regular.woff") format("woff"), url("./fonts/basis/BasisGrotesquePro-Regular.ttf") format("truetype"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Regular.woff2") format("woff2"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Regular.woff") format("woff"), url("./fonts/__MACOSX/basis/._BasisGrotesquePro-Regular.ttf") format("truetype");
   font-weight: 400;
   font-display: swap;
 }
